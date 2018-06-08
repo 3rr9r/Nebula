@@ -34,7 +34,7 @@ int main(int argc, char **argv, char **envp)
 
 ## Ideas
 
-The program is caling echo. If I can manage to change the Environment variable to get it runnig a shell. That would be great. The line `system("/usr/bin/env echo and now what?")` is of interest. `echo` is beeing called. `and now what` are parameters for `echo` . 
+The program is calling echo. If I can manage to change the Environment variable to get it runnig a shell. That would be great. The line `system("/usr/bin/env echo and now what?")` is of interest. `echo` is beeing called. `and now what` are parameters for `echo` . 
 
 ## Solution
 
