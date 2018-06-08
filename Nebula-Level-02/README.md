@@ -44,9 +44,15 @@ int main(int argc, char **argv, char **envp)
 
 The program is handling the Environment variable `USER`. Maybe i can change that form level02 to flag02. I need a shell running somehow. 
 
-The function `asprintf()` is writing the string `"/bin/echo level02 is cool" ` into `buffer` . It points to the very first adress of buffer. `printf()` is getting its input form the string`"about to call ...."` and `buffer` . And `system(buffer)` is doing what exactly? Its getting its input from buffer.  Buffer is filled with `/bin/echo level02 is cool` . So maybe it's working like in the first nebula? exercise? We need to get `system()` to run the code we want!
+### Analyzation 
 
+The function `asprintf()` is writing the string `"/bin/echo level02 is cool" ` into `buffer` . Which points to the very first adress of buffer.
 
+`printf()` is getting its input form the string`"about to call ...."` and `buffer` . 
+
+And `system(buffer)` is doing what exactly? Its getting its input from buffer.  Buffer is filled with `/bin/echo level02 is cool` .
+
+So maybe it's working like in the first nebula exercise? We need to get `system()` to run the code we want!
 
 ## Solution
 
