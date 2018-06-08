@@ -65,5 +65,10 @@ I'm playing around with the environment varibale `USER`. I'm setting it to flag0
 
 ## Solution
 
+My ideas where right to change the `USER`-variable. Change it to `;/bin/sh;` and run the program. Then you're in.
 
+### How is that working?
 
+The `system()` function calls system commands. By setting the `USER` to `;/bin/sh;`  we are telling it to open a shell. This is working because the semicolon `;` tells `system()` that a new statement is beginning. 
+
+That's it.
