@@ -52,6 +52,17 @@ The program is handling the Environment variable `USER`. Maybe i can change that
 
 So maybe it's working like in the first nebula exercise? We need to get `system()` to run the code we want!
 
+
+
+I'm playing around with the environment varibale `USER`. I'm setting it to flag02 and /bin/bash... then export it. `System()`is executing`/bin/echo` from the buffer and getting `USER` as parameter... So if i change `USER` to `/bin/bash` that's not helping. Because it would just echo the string. If i could somehow bend what's executed... Or maybe something how `printf()`parses variables... Or maybe move the pointer from buffer. So that it is not pointing to the first character but to one want. If that would work `system()` would get the buffer from a point i want. It could get something like `/bin/echo /bin/bash` start with the second comand instead of the first...
+
+1. I should find out more about `asprintf()`
+   1. get to know how its parsing variables etc
+2. get to know how syscalls via `system()` are working
+3. have a break and  breakfast.
+
+
+
 ## Solution
 
 
